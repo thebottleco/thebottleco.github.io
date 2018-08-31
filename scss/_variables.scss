@@ -1,0 +1,39 @@
+$color-background: #f5f5f5;
+$color-header-background: #0d0d0d;
+
+$color-text-light: #f1f1f1;
+$color-text-dark: #000;
+
+$header-height: 60px;
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .section-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+$medium-viewport: 768px;
+$large-viewport: 1024px;
+
+@mixin medium {
+  @media(max-width: $medium-viewport) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media(max-width: $large-viewport) {
+    @content;
+  }
+}

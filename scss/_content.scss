@@ -1,0 +1,174 @@
+@import 'variables';
+
+.content {
+  padding-top: $header-height;
+}
+
+.main-section {
+  @include aspect-ratio(16, 9);
+  max-height: 85vh;
+  
+  .main-video {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 90px 1px rgba(0,0,0,0.5);
+    background-color: black;
+  }
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  max-width: 1080px;
+  margin: auto;
+    
+  .text-content {
+    width: 40%;
+    z-index: 10;
+  }
+
+  .image-content {
+    width: 60%;
+    
+    .feature2 {
+      margin-bottom: 2em;
+      transform: rotateZ(30deg);
+    }
+
+    .feature3 {
+      margin-top: 3em;
+    }
+  }
+  
+  h1, h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1em;
+    margin-bottom: 0.3em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 1.1em;
+
+    b {
+      font-weight: 500;
+    }
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product {
+    text-align: center;
+    margin-bottom: 2em;
+    
+    &.smaller {
+      padding: 0 3em;
+    }
+    
+    img {
+      margin: 3em auto 1em;
+    }
+    
+    .text-content {
+      width: 100%;
+    }
+  }
+  
+  &.right {
+    flex-direction: row-reverse;
+  }
+  
+  &.full {
+    padding-top: 2em;
+    flex-direction: column;
+    text-align: center;
+    
+    .image-content {
+      width: 100%;
+      
+      img {
+        z-index: 10;
+      }
+    }
+    
+    .text-content {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  &.left-align {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.dark-section {
+  width: 100%;
+  padding: 6em 0;
+  margin: 6em auto;
+  background-color: $color-header-background;
+  color: $color-text-light;
+  
+  form {
+    margin-top: 2em;
+    label {
+      text-transform: lowercase;
+      font-weight: 400;
+      opacity: 0.5;
+    }
+    input,
+    input:focus {
+      width: 300px;
+      max-width: 80%;
+      padding-left: 0;
+      display: block;
+      margin-bottom: 2em;
+      background-color: $color-header-background;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid $color-text-light;
+    }
+  }
+}
+
+#contact {
+  margin: 6em auto 1em;
+}
+
+@include large {
+  .info-section {
+    padding: 2em 4em;
+  }
+}
+
+@include medium {
+  .info-section,
+  .info-section.right {
+    flex-direction: column;
+    padding: 2em 2em;
+    
+    .image-content {
+      max-width: 100%;
+      width: auto;
+      
+      .feature1 {
+        padding-left: 21%;
+      }
+    }
+    
+    .text-content {
+      text-align: center;
+      width: auto;
+    }
+    
+    .product {
+      max-width: 100%;
+    }
+  }
+}

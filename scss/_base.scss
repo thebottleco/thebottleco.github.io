@@ -1,0 +1,22 @@
+@import 'variables';
+
+body {
+  background-color: $color-background;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.92;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+::selection {
+  background-color: #FFF;
+}
