@@ -2,9 +2,11 @@ body {
   background-color: #f5f5f5; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 a:hover {
+  color: #000;
   opacity: 0.92; }
 
 img {
@@ -101,7 +103,8 @@ footer {
   margin-bottom: 0; }
 
 .content {
-  padding-top: 60px; }
+  padding-top: 60px;
+  overflow: hidden; }
 
 .main-section {
   position: relative;
@@ -161,6 +164,9 @@ footer {
       margin: 3em auto 1em; }
     .info-section .product .text-content {
       width: 100%; }
+  .info-section.lined-bottom {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2em; }
   .info-section.right {
     flex-direction: row-reverse; }
   .info-section.full {
@@ -190,8 +196,8 @@ footer {
       text-transform: lowercase;
       font-weight: 400;
       opacity: 0.5; }
-    .dark-section form input,
-    .dark-section form input:focus {
+    .dark-section form input[type=email],
+    .dark-section form input[type=email]:focus {
       width: 300px;
       max-width: 80%;
       padding-left: 0;
@@ -201,6 +207,8 @@ footer {
       border-radius: 0;
       border: none;
       border-bottom: 1px solid #f1f1f1; }
+    .dark-section form input[type=submit] {
+      padding: 0 9px; }
 
 #contact {
   margin: 6em auto 1em; }

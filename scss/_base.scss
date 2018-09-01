@@ -6,9 +6,11 @@ body {
 
 a {
   text-decoration: none;
+  color: $color-text-dark;
 }
 
 a:hover {
+  color: $color-text-dark;
   opacity: 0.92;
 }
 

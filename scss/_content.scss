@@ -2,6 +2,7 @@
 
 .content {
   padding-top: $header-height;
+  overflow: hidden;
 }
 
 .main-section {
@@ -79,6 +80,11 @@
     }
   }
   
+  &.lined-bottom {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2em;
+  }
+  
   &.right {
     flex-direction: row-reverse;
   }
@@ -122,8 +128,8 @@
       font-weight: 400;
       opacity: 0.5;
     }
-    input,
-    input:focus {
+    input[type=email],
+    input[type=email]:focus {
       width: 300px;
       max-width: 80%;
       padding-left: 0;
@@ -133,6 +139,9 @@
       border-radius: 0;
       border: none;
       border-bottom: 1px solid $color-text-light;
+    }
+    input[type=submit] {
+      padding: 0 9px;
     }
   }
 }
