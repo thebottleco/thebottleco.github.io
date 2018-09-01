@@ -32,6 +32,9 @@ html,
 body {
   font-family: AvenirNext; }
 
+.nowrap {
+  white-space: nowrap; }
+
 .header {
   background-color: #0d0d0d;
   height: 60px;
