@@ -108,6 +108,10 @@
     }
   }
   
+  &.extra-top {
+    padding-top: 5em;
+  }
+  
   &.left-align {
     text-align: left;
     align-items: flex-start;
@@ -143,6 +147,10 @@
     input[type=submit] {
       padding: 0 9px;
     }
+  }
+  
+  a {
+    color: $color-text-light;
   }
 }
 

@@ -1,3 +1,5 @@
+@import 'variables';
+
 @font-face {
   font-family: AvenirNext;
   src: url("fonts/AvenirNext-Regular.ttf");
@@ -23,4 +25,26 @@ body {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.notice {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 0.8em;
+  padding: 0 0.2em;
+}
+
+.notice.red {
+  color: red;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
+.small-text-block {
+  font-size: 0.8em;
+  display: block;
+  margin-top: 0.8em;
 }

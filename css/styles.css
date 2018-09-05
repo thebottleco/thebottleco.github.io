@@ -35,6 +35,24 @@ body {
 .nowrap {
   white-space: nowrap; }
 
+.notice {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 0.8em;
+  padding: 0 0.2em; }
+
+.notice.red {
+  color: red; }
+
+.small-text {
+  font-size: 0.8em; }
+
+.small-text-block {
+  font-size: 0.8em;
+  display: block;
+  margin-top: 0.8em; }
+
 .header {
   background-color: #0d0d0d;
   height: 60px;
@@ -183,6 +201,8 @@ footer {
     .info-section.full .text-content {
       text-align: center;
       width: 100%; }
+  .info-section.extra-top {
+    padding-top: 5em; }
   .info-section.left-align {
     text-align: left;
     align-items: flex-start; }
@@ -212,6 +232,8 @@ footer {
       border-bottom: 1px solid #f1f1f1; }
     .dark-section form input[type=submit] {
       padding: 0 9px; }
+  .dark-section a {
+    color: #f1f1f1; }
 
 #contact {
   margin: 6em auto 1em; }
