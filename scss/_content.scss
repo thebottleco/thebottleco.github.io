@@ -155,7 +155,7 @@
 }
 
 #contact {
-  margin: 6em auto 1em;
+  margin: 2em auto 1em;
 }
 
 @include large {
@@ -168,7 +168,7 @@
   .info-section,
   .info-section.right {
     flex-direction: column;
-    padding: 2em 2em;
+    padding: 0 2em;
     
     .image-content {
       max-width: 100%;
